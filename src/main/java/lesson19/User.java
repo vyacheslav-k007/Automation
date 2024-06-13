@@ -52,7 +52,7 @@ public class User {
             String name = gender.equals("Male")
                     ? MALE_NAMES[RANDOM.nextInt(MALE_NAMES.length)]
                     : FEMALE_NAMES[RANDOM.nextInt(FEMALE_NAMES.length)];
-            int age = RANDOM.nextInt(82) + 18; // Age between 18 and 99
+            int age = RANDOM.nextInt(82) + 18; 
             String email = UUID.randomUUID().toString() + "@example.com";
             return new User(name, age, email, gender);
         }
